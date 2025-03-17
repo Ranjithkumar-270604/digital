@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+#bg-wrap{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+.cont{
+    text-align: center;
+    padding: 20%;
+    z-index: 1;
+}
+.prev{
+    padding: top 10px; 
+    font-size: 5px;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.nav-circle {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-circle div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ffd700;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.nav-circle div.active {
+    background: #ffd700;
+}
+.nav-circle div.active2:hover{
+    background: #ffd700;
+}
+
+.menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.menu div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 5px 0;
+}
+
+.side-text {
+    position: fixed;
+    left: 10px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: #aaa;
+    font-size: 0.8rem;
+}
