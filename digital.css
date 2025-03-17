@@ -3,7 +3,7 @@
        text-align: center; 
        margin: 0; 
        padding: 0; 
-       background-image:ulr("image\digitalimage1.png");
+       background-image:ulr("digitalimage1.png");
 }
 .container { 
        padding: 20%; 
