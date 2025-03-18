@@ -3,23 +3,50 @@
        text-align: center; 
        margin: 0; 
        padding: 0; 
-       background-image:ulr("digitalimage1.png");
+       background-image:ulr("C:\digital\image\Image1.jpg");
+       background-color: black;
 }
 .container { 
        padding: 20%; 
-       background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background for better readability */
+        /* Semi-transparent white background for better readability */
             border-radius: 10px; /* Rounded corners */
             display: inline-block; /* Ensures the container only takes up as much space as needed */
             
 }
+ .charging-circle {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            width: 100px;
+            height: 100px;
+            border: 5px solid #ff8c00;
+            border-top-color: transparent;
+            border-radius: 50%;
+            animation: spin 1s linear infinite, expand 0.5s forwards;
+            opacity: 0;
+        }
+        
+        @keyframes spin {
+            from { transform: translate(-50%, -50%) rotate(0deg); }
+            to { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+        
+        @keyframes expand {
+            to {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+        }
 button { 
-    padding: 20px; 
+    padding: 20px;
+    
     font-size: 16px; 
     cursor: pointer; 
     border-radius: 60%; 
-    width: 80px; 
-    height: 80px; 
-    border: none; 
+    width: 100px; 
+    height: 100px; 
+    border: 6px solid white; 
     background-color: #4CAF50; 
     color: white; 
     transition: 0.3s ease;
@@ -27,20 +54,24 @@ button {
     animation: buttonEntrance 1s ease-out forwards; /* Border entrance animation */
     opacity: 0; /* Start invisible */
 }
-button::before { 
+/*button::before,
+button::after { 
     content: ""; 
     position: absolute; 
-    top: -10px; 
-    left: -10px; 
-    width: 100px; 
-    height: 100px; 
-    border-radius: 60%; 
-    border: 6px solid #4CAF50; 
-    box-sizing: border-box; 
+    inset: -20px;
+    z-index: -1;
+    border-radius: inherit; 
+    border: 6px; 
+    box-sizing: border-box;
+    background-image: conic-gradient(orange,rgb(255, 145, 0),rgba(244, 103, 3, 0.938),rgb(255, 89, 0),red,yellow); 
     transition: 0.3s ease;
-    animation: borderEntrance 1s ease-out forwards; /* Border entrance animation */
-    opacity: 0; /* Start invisible */
+    animation: borderEntrance 1s ease-out forwards; 
+    opacity: 0; 
 }
+.button::after{
+    filter: blur(2rem);
+    opacity: 0.7;
+}*/
 /* Button Entrance Animation */
 @keyframes buttonEntrance {
     0% { 
@@ -55,13 +86,9 @@ button::before {
 
 /* Border Entrance Animation */
 @keyframes borderEntrance {
-    0% { 
-        transform: translateY(10vh); /* Start from the bottom of the viewport */
-        opacity: 1; /* Start invisible */
-    }
-    100% { 
-        transform: translateY(0); /* Move to the center */
-        opacity: 1; /* Fully visible */
+
+    to{
+        rotate:360deg;
     }
 }
 button:hover { background-color: #45a049; }
