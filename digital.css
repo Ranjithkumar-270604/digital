@@ -3,7 +3,7 @@ body {
        text-align: center; 
        margin: 0; 
        padding: 0; 
-       background-image:url("Image1.jpg");
+       background-image:url("image/Image1.jpg");
        background:cover ;
        background-size: 1600px 730px  ;
 }
