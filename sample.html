@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Digital Experiences</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    background: linear-gradient(45deg, #3f3d56, #d38312);
+    height: 100vh;
+    overflow: hidden;
+}
+.hero{
+    padding: 15%;
+}
+.hero h3 {
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    text-transform: lowercase;
+}
+
+.hero .highlight {
+    color: #ffd700;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: #ddd;
+}
+
+.btn {
+    background: #ff8c00;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #ffd700;
+}
+
+.devices img {
+    max-width: 30%;
+    position: absolute;
+    transform: rotate(-10deg);
+}
+
+.devices img:nth-child(1) {
+    top: 10%;
+    left: 5%;
+}
+
+.devices img:nth-child(2) {
+    bottom: 10%;
+    right: 10%;
+}
+
+.devices img:nth-child(3) {
+    bottom: 5%;
+    left: 30%;
+}
+.nav-circle {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-circle div {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid #ffd700;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.nav-circle div.active {
+    background: #ffd700;
+}
+.nav-circle div.active2:hover{
+    background: #ffd700;
+}
+
+.circle {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: 5px 0;
+}
+
+.circle.active {
+    background: #ffd700;
+}
+    </style>
+</head>
+<body>
+        <section class="hero">
+            <h3>03. <span class="highlight">WEB & MOBILE EXPERIENCES</span></h3>
+            <h1>elegant digital experiences</h1>
+            <p>Innovative & Eye-Catching Web design & Development that help brands to stand out from the crowd.</p>
+            <button class="btn">KNOW MORE</button>
+        </section>
+
+       <!-- <section class="devices">
+            <img src="desktop_mockup.png" alt="Desktop Mockup">
+            <img src="tablet_mockup.png" alt="Tablet Mockup">
+            <img src="phone_mockup.png" alt="Phone Mockup">
+        </section>-->
+
+        <div class="nav-circle">
+      <div class="active2" onclick="location.href='page1.html'">1</div>
+      <div class="active2" onclick="location.href='page2.html'">2</div>
+      <div class="active" onclick="location.href='page3.html'">3</div>
+      <div class="active2" onclick="location.href='page4.html'">4</div>
+      <div class="active2" onclick="location.href='page5.html'">5</div>
+      <div class="active2" onclick="location.href='page6.html'">6</div>
+        </div>
+    </div>
+</body>
+</html>
