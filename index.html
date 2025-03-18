@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <link href="digital.css" rel="stylesheet">
+    <link href="C:\digital\digital.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,11 +12,19 @@
 <body>
     <div class="container">
         <button onclick="location.href='page1.html'">Start</button>
+        
        
     </div>
+    <script>
+        function startAnimation() {
+            const circle = document.getElementById('chargingCircle');
+            circle.style.display = 'block';
+            setTimeout(() => location.href = 'page1.html', 2000); // Redirect after animation
+        }
+    </script>
 
 
     <!-- Page 1 -->
-   <!-- <link href="C:\Users\91936\OneDrive\Desktop\digital\digital.css" rel="javascript">-->
+
 </body>
 </html>
