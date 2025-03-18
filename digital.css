@@ -1,54 +1,36 @@
- body { 
+body { 
        font-family: Arial, sans-serif; 
        text-align: center; 
        margin: 0; 
        padding: 0; 
-       background-image:ulr("C:\digital\image\Image1.jpg");
-       background-color: black;
+       background-image:url("image/Image1.jpg");
+       background:cover ;
+       background-size: 1600px 730px  ;
+}
+.bg-image {
+   
+    z-index: -1;
+   
 }
 .container { 
-       padding: 20%; 
+            padding: 20%; 
         /* Semi-transparent white background for better readability */
             border-radius: 10px; /* Rounded corners */
             display: inline-block; /* Ensures the container only takes up as much space as needed */
             
 }
- .charging-circle {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            width: 100px;
-            height: 100px;
-            border: 5px solid #ff8c00;
-            border-top-color: transparent;
-            border-radius: 50%;
-            animation: spin 1s linear infinite, expand 0.5s forwards;
-            opacity: 0;
-        }
-        
-        @keyframes spin {
-            from { transform: translate(-50%, -50%) rotate(0deg); }
-            to { transform: translate(-50%, -50%) rotate(360deg); }
-        }
-        
-        @keyframes expand {
-            to {
-                transform: translate(-50%, -50%) scale(1);
-                opacity: 1;
-            }
-        }
+
 button { 
     padding: 20px;
-    
+    z-index: 1;
     font-size: 16px; 
     cursor: pointer; 
     border-radius: 60%; 
     width: 100px; 
     height: 100px; 
-    border: 6px solid white; 
-    background-color: #4CAF50; 
-    color: white; 
+    border: 6px solid black; 
+    background-color:rgba(42, 225, 246, 0.708); 
+    color: black; 
     transition: 0.3s ease;
     position: relative;
     animation: buttonEntrance 1s ease-out forwards; /* Border entrance animation */
@@ -91,5 +73,5 @@ button::after {
         rotate:360deg;
     }
 }
-button:hover { background-color: #45a049; }
+button:hover { background-color:rgba(0, 132, 255, 0.708); }
 button:hover::before { border-color: #45a049; }
